@@ -44,9 +44,7 @@ class PictureView: UIView {
     }
 
     //MARK: - Methods
-    func setImage(image: UIImage?) {
-        guard let image = image else { return }
-
-        self.podImageView.image = image
+    func setImage(image: String) {
+        self.podImageView.image = UIImage(named: image)
     }
 }

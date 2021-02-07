@@ -29,6 +29,9 @@ class PictureViewController: UIViewController {
 
         self.title = "Picture Of The Day"
         view.backgroundColor = .systemTeal
+
+        pictureView.setImage(image: "IMG_3262.JPG")
+        pictureView.contentMode = .scaleAspectFit
     }
 
     private func setupLayout() {
