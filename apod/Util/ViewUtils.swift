@@ -7,9 +7,7 @@
 
 import UIKit
 
-func addParallaxToView(view: UIView, amount: Int) {
-    let amount = amount
-
+func addParallaxTo(view: UIView, amount: Int) {
     let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
     horizontal.minimumRelativeValue = -amount
     horizontal.maximumRelativeValue = amount
