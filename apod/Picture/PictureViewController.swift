@@ -28,10 +28,12 @@ class PictureViewController: UIViewController {
         view.addSubview(pictureView)
 
         self.title = "Picture Of The Day"
-        view.backgroundColor = .systemTeal
+        view.backgroundColor = .black
 
         pictureView.setImage(image: "IMG_3262.JPG")
         pictureView.contentMode = .scaleAspectFit
+
+        addParallaxToView(view: pictureView, amount: 200)
     }
 
     private func setupLayout() {

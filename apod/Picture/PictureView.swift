@@ -36,10 +36,10 @@ class PictureView: UIView {
 
     private func setupLayout() {
         NSLayoutConstraint.activate([
-            podImageView.topAnchor.constraint(equalTo: topAnchor),
-            podImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            podImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            podImageView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            podImageView.topAnchor.constraint(equalTo: topAnchor, constant: 30.0),
+            podImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30.0),
+            podImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30.0),
+            podImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30.0)
         ])
     }
 
