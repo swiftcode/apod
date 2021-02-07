@@ -33,7 +33,7 @@ class PictureViewController: UIViewController {
         pictureView.setImage(image: "IMG_3262.JPG")
         pictureView.contentMode = .scaleAspectFit
 
-        addParallaxToView(view: pictureView, amount: 200)
+        addParallaxTo(view: pictureView, amount: 200)
     }
 
     private func setupLayout() {
